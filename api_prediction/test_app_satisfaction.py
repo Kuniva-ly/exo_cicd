@@ -12,7 +12,7 @@ def client():
     with app.test_client() as client:
         yield client
 
-
+# Fixture pour mocker le modèle de prédiction pour les 3 tests qui ont eu 500
 @pytest.fixture
 def mock_model():
     """Fixture pour créer un modèle mockup"""
