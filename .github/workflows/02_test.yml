@@ -6,9 +6,9 @@
 name: Test API Satisfaction
 on:
   push:
-    branches: [main]
+    branches: [main, fake_one]
   pull_request:
-    branches: [main]
+    branches: [main, fake_one]
 jobs:
   test:
     runs-on: ubuntu-latest
